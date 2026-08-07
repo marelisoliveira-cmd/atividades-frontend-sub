@@ -236,3 +236,316 @@ exercicio-01/
 
 Envie o link do repositório solicitado pelo professor e anexe a evidência gerada pela plataforma.
 
+Atividade 2
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizonte Soluções Digitais</title>
+
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <a class="pular-conteudo" href="#conteudo">
+        Pular para o conteúdo principal
+    </a>
+
+    <header class="cabecalho">
+        <p class="etiqueta">Tecnologia para pequenos negócios</p>
+
+        <h1>Horizonte Soluções Digitais</h1>
+
+        <p>
+            Organizamos presença digital, atendimento e processos para empresas
+            que desejam crescer.
+        </p>
+
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#processo">Como trabalhamos</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo">
+
+        <section id="servicos" aria-labelledby="titulo-servicos">
+            <h2 id="titulo-servicos">Serviços para a rotina da empresa</h2>
+
+            <p>
+                Cada serviço resolve uma necessidade comum de organização,
+                divulgação ou relacionamento com clientes.
+            </p>
+
+            <article>
+                <h3>Site institucional</h3>
+                <p>
+                    Página profissional para apresentar a empresa, seus serviços
+                    e os canais de contato.
+                </p>
+            </article>
+
+            <article>
+                <h3>Catálogo digital</h3>
+                <p>
+                    Organização de produtos ou serviços em uma experiência
+                    simples para computadores e celulares.
+                </p>
+            </article>
+
+            <article>
+                <h3>Automação de atendimento</h3>
+                <p>
+                    Formulários e fluxos básicos para reduzir tarefas repetitivas
+                    e registrar solicitações.
+                </p>
+            </article>
+        </section>
+
+        <section id="processo" aria-labelledby="titulo-processo">
+            <h2 id="titulo-processo">Como trabalhamos</h2>
+
+            <ol>
+                <li>Entendemos o problema e as pessoas envolvidas.</li>
+                <li>Organizamos o conteúdo e desenhamos a solução.</li>
+                <li>Construímos, testamos e registramos as melhorias.</li>
+            </ol>
+        </section>
+
+        <section id="equipe" aria-labelledby="titulo-equipe">
+            <h2 id="titulo-equipe">Equipe responsável</h2>
+
+            <p>
+                Profissionais de atendimento, design e desenvolvimento trabalham
+                juntos para entregar soluções de qualidade.
+            </p>
+        </section>
+
+        <aside id="atendimento" aria-labelledby="titulo-atendimento">
+            <h2 id="titulo-atendimento">Atendimento</h2>
+
+            <p>Precisa conversar antes de solicitar um projeto?</p>
+
+            <button
+                id="mostrarAtendimento"
+                type="button"
+                aria-expanded="false"
+                aria-controls="detalhesAtendimento">
+                Mostrar horários
+            </button>
+
+            <div id="detalhesAtendimento" hidden>
+                <p>Segunda a sexta, das 8h às 18h.</p>
+                <p>Retorno inicial em até um dia útil.</p>
+            </div>
+        </aside>
+
+    </main>
+
+    <footer id="contato">
+        <h2>Contato profissional</h2>
+
+        <address>
+            Avenida Central, 250 - Curitiba/PR<br>
+            <a href="mailto:contato@horizontedigital.example">
+                contato@horizontedigital.example
+            </a>
+        </address>
+
+        <p>Exercício FE02 - Programação Front-End</p>
+    </footer>
+
+</body>
+</html>
+
+Exercicio 2
+
+segundo código 
+
+:root {
+    --fundo: #08121f;
+    --superficie: #10243a;
+    --superficie-clara: #183754;
+    --texto: #f5f8ff;
+    --texto-suave: #c2cede;
+    --destaque: #67e8f9;
+    --borda: #31516f;
+    --sucesso: #86efac;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--fundo);
+    color: var(--texto);
+}
+
+.pular-conteudo {
+    position: absolute;
+    left: 16px;
+    top: -80px;
+    padding: 12px 16px;
+    background: var(--destaque);
+    color: #04131f;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+.pular-conteudo:focus {
+    top: 16px;
+}
+
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+header,
+main,
+footer {
+    width: min(900px, 92%);
+    margin-inline: auto;
+}
+
+header {
+    padding: 52px 0 28px;
+}
+
+.etiqueta {
+    color: var(--destaque);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+h1 {
+    max-width: 760px;
+    margin: 0 0 12px;
+    font-size: clamp(2.2rem, 7vw, 4.6rem);
+    line-height: 1.1;
+}
+
+p,
+li,
+address {
+    color: var(--texto-suave);
+    line-height: 1.65;
+}
+
+nav {
+    margin-top: 26px;
+    padding-top: 18px;
+    border-top: 1px solid var(--borda);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 18px 10px 0;
+}
+
+nav a {
+    color: var(--destaque);
+    font-weight: 700;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
+section,
+aside,
+footer {
+    margin-bottom: 22px;
+    padding: 24px;
+    background: var(--superficie);
+    border: 1px solid var(--borda);
+    border-radius: 16px;
+}
+
+article {
+    margin-top: 14px;
+    padding: 18px;
+    background: var(--superficie-clara);
+    border-left: 4px solid var(--destaque);
+    border-radius: 10px;
+    padding-left: 24px;
+}
+
+button {
+    min-height: 48px;
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 10px;
+    background: var(--destaque);
+    color: #04131f;
+    font: inherit;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus-visible {
+    filter: brightness(1.08);
+}
+
+#detalhesAtendimento {
+    margin-top: 18px;
+    padding: 16px;
+    border: 1px solid var(--sucesso);
+    border-radius: 10px;
+}
+
+#detalhesAtendimento p:last-child {
+    margin-bottom: 0;
+}
+
+footer {
+    margin-bottom: 38px;
+}
+
+address {
+    font-style: normal;
+}
+
+@media (max-width: 520px) {
+    header {
+        padding-top: 34px;
+    }
+
+    section,
+    aside,
+    footer {
+        padding: 18px;
+    }
+
+    nav li {
+        display: block;
+        margin-right: 0;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
