@@ -1,0 +1,25 @@
+PROJETO EM ANDAMENTO
+
+Exercicio: FE01 - Ambiente, VS Code, pastas e primeiro projeto
+Aluno: Marelis
+Gerado em: 06/08/2026, 21:23:16
+
+Este ZIP foi baixado antes da conclusao ou validacao completa.
+Os arquivos contem exatamente o texto digitado no editor.
+Nenhum codigo do gabarito foi acrescentado automaticamente.
+
+STATUS DOS ARQUIVOS
+- index.html: validado; 2093 caracteres
+- estilo.css: validado; 2046 caracteres
+- script.js: validado; 366 caracteres
+- README.md: em andamento - cerca de 99%; 764 caracteres
+
+COMO CONTINUAR
+1. Abra a pasta exercicio-01 no VS Code.
+2. Continue editando os arquivos normalmente.
+3. Abra index.html no navegador para testar os arquivos Web.
+4. Quando terminar, volte a plataforma e valide novamente.
+5. Voce pode enviar esta pasta ao GitHub para continuar em outro computador.
+
+ATENCAO
+Baixar o ZIP nao conclui a atividade e nao substitui a validacao final.
