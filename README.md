@@ -1,7 +1,8 @@
 # Professor-Gabriel-
 Frond-and
 
-Código 1
+Código - html
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -57,7 +58,7 @@ Código 1
 
 
 
-Segundo código 
+Segundo código - css
 
 :root {
 --fundo: #07111f;
@@ -191,7 +192,7 @@ button {
     }
 }
 
-Código 3
+Código 3 - javascript
 
 const botaoTeste = document.querySelector('#testarProjeto');
 const statusProjeto = document.querySelector('#statusProjeto');
@@ -203,40 +204,11 @@ botaoTeste.addEventListener('click', () => {
 });
 
 
-Código 4 
+Exercício 2
 
-# FE01 - Meu primeiro projeto Front-End
+Código 
 
-Primeiro projeto da disciplina **Programação Front-End**, organizado para testar a ligação entre HTML, CSS e JavaScript.
-
-## Estrutura da pasta
-
-```text
-exercicio-01/
--  index.html
--  estilo.css
--  script.js
--  README.md
-```
-
-## Como executar
-
-1. Abra a pasta no Visual Studio Code.
-2. Abra o arquivo `index.html` no navegador ou utilize a extensão Live Server.
-3. Clique em **Verificar projeto**.
-4. Confirme se a mensagem de sucesso aparece na página.
-
-## Identificação do estudante
-
-- Nome: **substitua pelo seu nome**
-- Turma: **2 DS Subsequente - Noturno**
-- Forma escolhida para executar: **descreva aqui**
-
-## Entrega
-
-Envie o link do repositório solicitado pelo professor e anexe a evidência gerada pela plataforma.
-
-Atividade 2
+index. html
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -244,7 +216,6 @@ Atividade 2
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horizonte Soluções Digitais</title>
-
     <link rel="stylesheet" href="estilo.css">
     <script src="script.js" defer></script>
 </head>
@@ -261,8 +232,7 @@ Atividade 2
         <h1>Horizonte Soluções Digitais</h1>
 
         <p>
-            Organizamos presença digital, atendimento e processos para empresas
-            que desejam crescer.
+            Organizamos presença digital, atendimento e processos para empresas que desejam crescer com clareza.
         </p>
 
         <nav aria-label="Navegação principal">
@@ -296,8 +266,8 @@ Atividade 2
             <article>
                 <h3>Catálogo digital</h3>
                 <p>
-                    Organização de produtos ou serviços em uma experiência
-                    simples para computadores e celulares.
+                    Organização de produtos ou serviços em uma experiência simples
+                    para computador e celular.
                 </p>
             </article>
 
@@ -325,7 +295,7 @@ Atividade 2
 
             <p>
                 Profissionais de atendimento, design e desenvolvimento trabalham
-                juntos para entregar soluções de qualidade.
+                juntos para transformar necessidades em soluções úteis.
             </p>
         </section>
 
@@ -354,21 +324,23 @@ Atividade 2
         <h2>Contato profissional</h2>
 
         <address>
-            Avenida Central, 250 - Curitiba/PR<br>
+            Avenida Central, 250 – Curitiba/PR<br>
+
             <a href="mailto:contato@horizontedigital.example">
                 contato@horizontedigital.example
             </a>
         </address>
 
-        <p>Exercício FE02 - Programação Front-End</p>
+        <p>Exercício FE02 • Programação Front-End</p>
     </footer>
 
 </body>
 </html>
 
-Exercicio 2
 
-segundo código 
+Código 
+
+estilo.css
 
 :root {
     --fundo: #08121f;
@@ -411,20 +383,14 @@ body {
     top: 16px;
 }
 
-h2,
-h3,
-p {
-    margin-top: 0;
-}
-
-header,
+.cabecalho,
 main,
 footer {
     width: min(900px, 92%);
     margin-inline: auto;
 }
 
-header {
+.cabecalho {
     padding: 52px 0 28px;
 }
 
@@ -439,7 +405,13 @@ h1 {
     max-width: 760px;
     margin: 0 0 12px;
     font-size: clamp(2.2rem, 7vw, 4.6rem);
-    line-height: 1.1;
+    line-height: 1;
+}
+
+h2,
+h3,
+p {
+    margin-top: 0;
 }
 
 p,
@@ -466,8 +438,11 @@ nav li {
     margin: 0 18px 10px 0;
 }
 
-nav a {
+a {
     color: var(--destaque);
+}
+
+nav a {
     font-weight: 700;
     text-decoration-thickness: 2px;
     text-underline-offset: 5px;
@@ -489,6 +464,9 @@ article {
     background: var(--superficie-clara);
     border-left: 4px solid var(--destaque);
     border-radius: 10px;
+}
+
+ol {
     padding-left: 24px;
 }
 
@@ -529,7 +507,7 @@ address {
 }
 
 @media (max-width: 520px) {
-    header {
+    .cabecalho {
         padding-top: 34px;
     }
 
@@ -549,3 +527,17 @@ address {
     }
 }
 
+Código 
+
+Script.js
+
+const botaoAtendimento = document.querySelector('#mostrarAtendimento');
+const detalhesAtendimento = document.querySelector('#detalhesAtendimento');
+
+botaoAtendimento.addEventListener('click', () => { 
+    const estaAberto = botaoAtendimento.getAttribute('aria-expanded') === 'true';
+
+    botaoAtendimento.setAttribute('aria-expanded', String(!estaAberto));
+    detalhesAtendimento.hidden = estaAberto;
+    botaoAtendimento.textContent = estaAberto ? 'Mostrar horários' : 'Ocultar horários';
+});
