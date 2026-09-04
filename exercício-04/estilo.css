@@ -3,7 +3,7 @@
     --painel: #10253b;
     --painel-claro: #183751;
     --texto: #f4f7fb;
-    --texto-suave: #bfd0d1;
+    --texto-suave: #bfd0df;
     --destaque: #38bdf8;
     --sucesso: #4ade80;
     --borda: #2b4e6d;
@@ -101,7 +101,7 @@ button {
     border: 0;
     border-radius: 12px;
     background: var(--destaque);
-    color: #043f51;
+    color: #04131f;
     font: inherit;
     font-weight: 800;
     cursor: pointer;
