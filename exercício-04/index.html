@@ -1,64 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charser="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale==1.0">
-  <title>Vitrine de planos - CSS profissional</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Painel de tarefas do dia</title>
   <link rel="stylesheet" href="estilo.css">
-  <script src="scripr.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="cabecalho">
-    <p class="etiqueta">FE04 - Seletores,cascata e Box Model</p>
-    <hi>Planos para presença digital</h1>
-    <p class="introdução">Compare soluções para empresas que precisam publicar, organizar e  evoluir seus canais digitais.</p>
-    <button id="alternarTema" type="button" aria-pressed="false">Ativar tema clato</button>
-    <p id="statusTema" class="status" role="status" aria-live=polite">Tema escuro ativo.</p>
+  <header class="topo">
+    <p class="etiqueta">Exercício FE04</p>
+    <h1>Painel de tarefas do dia</h1>
+    <p class= "descrição">Organize as tarefas em cartões e use JavaScript para atualizar o status da rotina.</p>
   </header>
 
-  <main id="conteudo">
-    <section class="painel" aria-labelledby="titulo-planos">
-      <h2 id="titulo-planos">Planos disponíveis</h2>
-
-      <article class="cartão" data-status="essencial">
-        <p class="selo">Essencial</p>
-        <h3>Presença</h3>
-        <p>Uma página institucional organizada para apresentar serviços e contatos.</p>
-        <p class="preco"><span>R$</span> 490</p>
+  <main class="container">
+    <section class="painel" aria-labelledby="titulo-tarefas">
+      <h2 id="titulo-tarefas">Tarefas planejadas</h2>
+      <div class="lista-tarefas">
+        <article class= "tarefa"
+          <h3>Revisar conteúdo</h3>
+          <p>Ler os materiais da aula e anotar os pontos principais.</p>
       </article>
 
-      <article id="planoDestaque" class="cartao destaque"data-status="recomendado">
-    
-        <P class="selo">Recomendado</p>
-        <h3>Negócio</h3>
-        <p>Site com páginas de serviços, formulário de contato e identidade visual consistente.</p>
-        <p class="preco"><span>R$</span> 890</p>
-      </article>
-
-      </article class="cartao" data-status="avancado">
-        <p class="selo">Avançado</p>
-        <h3>Operação</h3>
-        <p>Interface preparada para catálagos, integrações e evolução contínua do produto.</p>
-        <p class="preco"><spanR$</span> 1.490</p>
-      </article>
+      <article  class="tarefa">
+        <h3>Praticar código</h3>
+        <p>Montar uma página com HTML, CSS e JavaScript separados.</p>
+         </article> 
+         <article class= "tarefa"
+           <h3>Testar o projeto</h3>
+           <p>Abrir navegador e verificar se tudo está funcionando.</p>
+            </article> 
+      </div>
     </section>
-
-    <aside class="painel resumo" aria=labelledby="titulo-resumo">
-      <h2 id="titulo-resumo">Como o CSS decide o resultado?</h2>
-      <p> Seletores encontram elementos. A cascata combina origem, especificidade e ordem. As variáveis reduzem repetição. O Box Model controla conteúdo, preenchimento, borda e margem.</p>
-    </aside>
+    
+    <section class="painel" aria-labelledby="titulo-status">
+      <h2 id="titulo-status">Status do dia</h2>
+      <p id="StatusRotina" class="status">Situação atual: rotina em andamento.</p>
+       <button id="atualizarRotina" type="button">Atualizar status</button>
+      </section>
   </main>
 
   <footer>
-    <p>Exercício FE04 - Programação Front-End - 2 DS Subsequente</p>
+    <p>Exercício FE04 - 2 DS Subsequente<p/>
   </footer>
 </body>
 </html>
-
-
-
-
-
-
-      
-
