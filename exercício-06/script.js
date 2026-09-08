@@ -12,4 +12,5 @@ botaoAvancar.addEventListener('click', () => {
   topicos[indiceAtual].classList.add('ativo');
 
   const tituloAtual = topicos[indiceAtual].querySelector('h3').textContent;
+  mensagemTopico.textContent = `Tópico em destaque: ${tituloAtual}.`;
 });
